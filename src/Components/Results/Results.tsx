@@ -18,8 +18,8 @@ const ResultsItem = ({ results, query }: Results) => {
 
   return (
     <ul>
-      {results.map((country) => (
-        <li key={country.alpha3Code}>{highlightMatch(country.name.common, query)}</li>
+      {results.map((country,index) => (
+        <li key={index}>{highlightMatch(country.name.common, query)}</li>
       ))}
     </ul>
   );

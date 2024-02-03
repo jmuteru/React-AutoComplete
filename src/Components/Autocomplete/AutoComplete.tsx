@@ -1,4 +1,3 @@
-// AutocompleteMain.tsx
 import { useState, useEffect } from 'react';
 import InputItem from '../Input/Input';
 import Results from '../Results/Results';
