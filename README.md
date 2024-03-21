@@ -1,33 +1,45 @@
-# React Autocomplete Web-app
+# React Debounce Library
 
-Created with Vite! 🚀
- For more details and advanced configurations, refer to the [Vite Documentation](https://vitejs.dev/)
-## Project Setup
+This is a simple React library that allows users to search ,filter & display hints while making an API call. It consists of a search bar where users can input their search query and a list component to display the search results with regards to performance.
 
-1. **Clone the repository:**
+## Features
 
-    ```bash
-    git clone https://github.com/jmuteru/React-AutoComplete.git
-    ```
+- Search and filter api content.
+- Display search results in a list format.
 
-2. **Navigate to the project directory:**
+## Prerequisites
 
-    ```bash
-    cd React-AutoComplete
-    ```
+Before running this application, ensure you have the following installed:
 
-3. **Install dependencies:**
+- Node.js
+- npm or yarn
 
-    ```bash
-    npm install
-    ```
+## Getting Started
 
-## Development
+To get started with this application, follow these steps:
 
-To start the development server and launch the app:
+1. Clone this repository to your local machine:
 
-```bash
-npm run dev
+   ```bash
+   git clone <repository-url>
 
-And then open http://localhost:5173/ to view it in the browser.
+Open http://localhost:3000 in your web browser to view the application.
 
+Components
+Search
+The Search component renders a search bar where users can input their search query. It receives a callback function onChange as a prop, which is called whenever the input value changes.
+
+List
+The List component displays the search results in a list format. It receives the searchTerm prop from its parent component and fetches the search results from the Wikipedia API using the getWikiSearchResults function. The search results are then rendered using the Item component.
+
+Item
+The Item component represents an individual search result item. It receives the result prop containing the data for a single search result and renders it accordingly.
+
+API
+The application uses the Wikipedia API to fetch search results. The getWikiSearchResults function in the api/wikiApi.js file handles the API request and returns the search results data.
+
+Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
